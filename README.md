@@ -2,6 +2,8 @@
 
 A portfolio website built using Node.js, the express generator, and pug templating engine.
 
+* [Live Link](https://jsfw-assignment1.herokuapp.com/)
+
 ## Built With
 
 * [Node.js](https://nodejs.org/) - JavaScript runtime
