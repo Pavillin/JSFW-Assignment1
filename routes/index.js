@@ -26,6 +26,10 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact page' });
 });
 
+/* GET graphic design work page. */
+router.get('/projects/graphicDesignWork', function(req, res, next) {
+  res.render('projects/graphicDesignWork', { title: 'Graphic Design Work' });
+});
 
 
 module.exports = router;
