@@ -1,4 +1,47 @@
 extends layout
 
 block content
-  p(style='color: #fff; text-align: center; margin-top: 20px;') Portfolio
+  // Projects START
+  .projectBox
+    .project(style='background-image: url(../images/strangerThings.jpg);')
+      h3.projectName Stranger Things Alphabet
+      a(href='https://trello.com/b/VKnxLetn')
+        input.projectBtn(type='submit', value='View')
+      p Physical stranger things alphabet powered with an Arduino board.
+  .projectBox
+    .project(style='background-color: #EE7700;')
+      h3.projectName The DeadFyre Project
+      a(href='https://deadfyre.com')
+        input.projectBtn(type='submit', value='View')
+      p A landing page that's still a mystery, shhh!
+  .projectBox
+    .project(style='background-image: url(../images/a2.jpg);')
+      h3.projectName Arma2 DayZ Game Servers
+      a(href='http://deadfyre.com/dayz/index.html')
+        input.projectBtn(type='submit', value='View')
+      p Build from the ground up to provide the best playing experience.
+  .projectBox
+    .project(style='background-image: url(../images/jscamp.jpg);')
+      h3.projectName JavaScript Camp Projects
+      a(href='projects/jscamp')
+        input.projectBtn(type='submit', value='View')
+      p Everything from an animated clock to a interactive drumkit.
+  .projectBox
+    .project(style='background-image: url(../images/graphicdesign.jpg);')
+      h3.projectName Graphic Design Work
+      a(href='projects/graphicDesignWork')
+        input.projectBtn(type='submit', value='View')
+      p Some of my work from Photoshop, Illustrator, & Cinema 4D.
+  .projectBox(target='comingSoon')
+    .project(style='background-image: url(../images/a3.jpg);')
+      h3.projectName Arma3 Exile Game Servers
+      a(href='a3exile')
+        input.projectBtn(type='submit', value='Coming Soon')
+      p Build from the ground up to provide the best playing experience.
+  .projectBox(target='comingSoon')
+    .project(style='background-image: url(../images/rocketleague.jpg);')
+      h3.projectName Rocket League Mods
+      a(href='rlmods')
+        input.projectBtn(type='submit', value='Coming Soon')
+      p Custom maps, modes, skins, and more!
+  // Projects END
