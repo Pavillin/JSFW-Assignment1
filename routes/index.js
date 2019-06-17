@@ -31,5 +31,15 @@ router.get('/projects/graphicDesignWork', function(req, res, next) {
   res.render('projects/graphicDesignWork', { title: 'Graphic Design Work' });
 });
 
+/* GET jscamp page. */
+router.get('/projects/jscamp', function(req, res, next) {
+  res.render('projects/jscamp', { title: 'JavaScript Camp Projects' });
+});
+
+/* GET jscamp drumkit page. */
+router.get('/projects/jscamp/drumkit', function(req, res, next) {
+  res.render('projects/jscamp/drumkit');
+});
+
 
 module.exports = router;
