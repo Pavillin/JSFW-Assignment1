@@ -1,0 +1,45 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title JS Drum Kit
+    link(rel='stylesheet', href='../../../stylesheets/jscamp/drumkit.css')
+  body
+    .keys
+      .key(data-key='65')
+        kbd A
+        span.sound clap
+      .key(data-key='83')
+        kbd S
+        span.sound hihat
+      .key(data-key='68')
+        kbd D
+        span.sound kick
+      .key(data-key='70')
+        kbd F
+        span.sound openhat
+      .key(data-key='71')
+        kbd G
+        span.sound boom
+      .key(data-key='72')
+        kbd H
+        span.sound ride
+      .key(data-key='74')
+        kbd J
+        span.sound snare
+      .key(data-key='75')
+        kbd K
+        span.sound tom
+      .key(data-key='76')
+        kbd L
+        span.sound tink
+    audio(data-key='65', src='../../../audio/jscamp/drumkit/clap.wav')
+    audio(data-key='83', src='../../../audio/jscamp/drumkit/hihat.wav')
+    audio(data-key='68', src='../../../audio/jscamp/drumkit/kick.wav')
+    audio(data-key='70', src='../../../audio/jscamp/drumkit/openhat.wav')
+    audio(data-key='71', src='../../../audio/jscamp/drumkit/boom.wav')
+    audio(data-key='72', src='../../../audio/jscamp/drumkit/ride.wav')
+    audio(data-key='74', src='../../../audio/jscamp/drumkit/snare.wav')
+    audio(data-key='75', src='../../../audio/jscamp/drumkit/tom.wav')
+    audio(data-key='76', src='../../../audio/jscamp/drumkit/tink.wav')
+    script(type='text/javascript', src='../../../javascripts/jscamp/drumkit.js')
