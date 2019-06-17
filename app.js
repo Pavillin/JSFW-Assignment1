@@ -23,8 +23,10 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
+// Now, catch 404 and display custom 404 page
 app.use(function(req, res, next) {
-  next(createError(404));
+  //next(createError(404));
+  res.render('404', { title: '404' });
 });
 
 // error handler
