@@ -2,7 +2,7 @@
 
 A portfolio website built using Node.js, the express generator, and pug templating engine.
 
-* [Live Link](https://jsfw-assignment1.herokuapp.com/)
+* [Live Link](http://nodeportfolio.deadfyre.com/)
 
 ## Built With
 
@@ -14,7 +14,7 @@ A portfolio website built using Node.js, the express generator, and pug templati
 
 I built a portfolio website before and I'm merging it into this project so it runs off node instead of PHP.
 A live version of my OLD portfolio can be viewed [here](https://portfolio.deadfyre.com/).
-Once this project is complete it'll replace my old portfolio and be hosted on the same domain.
+Once this project is complete it'll replace my old portfolio and be hosted on nodeportfolio.deadfyre.com.
 
 The 3rd party libraries/frameworks that are being used and will eventually be implemented to this project are as follows
 * [jQuery](https://jquery.com/) - JavaScript library
