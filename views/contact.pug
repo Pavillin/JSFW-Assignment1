@@ -1,5 +1,36 @@
 extends layout
 
 block content
-  p(style='color: #fff; text-align: center; margin-top: 20px;') Contact
+  // Popup Window START
+  .alert
+    span.closebtn(onclick="this.parentElement.style.display='none';") ×
+    |         Whoa! I haven't finished this page yet, just email me at: 
+    a(href='mailto:contact@deadfyre.com?', target='_top', style='color: white;')
+      strong contact@deadfyre.com
+    |         Or you can slide into my DMs on discord @
+    b Drix#8197
+    |  😉
+  // Popup Window END
+  // Contact Form START
+  .container
+    .col-md-5(style='margin: auto;')
+      .form-area
+        form(role='form')
+          br(style='clear:both')
+          h3(style='margin-bottom: 25px; text-align: center;') Contact Me!
+          .form-group
+            input#name.form-control(type='text', name='name', placeholder='Name', required=true)
+          .form-group
+            input#email.form-control(type='email', name='email', placeholder='Email', required=true)
+          .form-group
+            input#mobile.form-control(type='text', name='mobile', placeholder='Mobile Number (Optional)')
+          .form-group
+            input#subject.form-control(type='text', name='subject', placeholder='Subject', required=true)
+          .form-group
+            textarea#message.form-control(type='textarea', placeholder='Message', maxlength='140', rows='7')
+            span.help-block
+              p#characterLeft.help-block You have reached the limit
+          button#submit.btn.btn-primary.btn-submit(type='submit', name='submit') Submit Form
+  // Contact Form END
+
 
