@@ -1,4 +1,23 @@
 extends layout
 
 block content
-  p(style='color: #fff; text-align: center; margin-top: 20px;') Services
+  // Services START
+  .projectBox
+    .project(style='background-image: url(/images/design.jpg);')
+      h3.projectName Graphic Design
+      a(href='../services/graphicDesign')
+        input.projectBtn(type='submit', value='View')
+      p Logo & brand design.
+  .projectBox
+    .project(style='background-image: url(/images/gameDev.jpg);')
+      h3.projectName Game Development
+      a(href='../services/gameDev')
+        input.projectBtn(type='submit', value='View')
+      p Game programming services in Unity and Unreal.
+  .projectBox
+    .project(style='background-image: url(/images/programming.jpg);')
+      h3.projectName Multipurpose Programming
+      a(href='../services/programming')
+        input.projectBtn(type='submit', value='View')
+      p Websites, software, databases, the whole nine-yards.
+  // Services END

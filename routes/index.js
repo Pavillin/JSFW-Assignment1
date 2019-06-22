@@ -41,5 +41,20 @@ router.get('/projects/jscamp/drumkit', function(req, res, next) {
   res.render('projects/jscamp/drumkit');
 });
 
+/* GET services graphic design page. */
+router.get('/services/graphicDesign', function(req, res, next) {
+  res.render('services/graphicDesign');
+});
+
+/* GET services game dev page. */
+router.get('/services/gameDev', function(req, res, next) {
+  res.render('services/gameDev');
+});
+
+/* GET services programming page. */
+router.get('/services/programming', function(req, res, next) {
+  res.render('services/programming');
+});
+
 
 module.exports = router;
