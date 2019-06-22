@@ -48,6 +48,21 @@ router.get('/projects/jscamp/drumkit', function(req, res, next) {
   res.render('projects/jscamp/drumkit');
 });
 
+/* GET jscamp arrays page. */
+router.get('/projects/jscamp/arrays', function(req, res, next) {
+  res.render('projects/jscamp/arrays');
+});
+
+/* GET jscamp clock page. */
+router.get('/projects/jscamp/clock', function(req, res, next) {
+  res.render('projects/jscamp/clock');
+});
+
+/* GET jscamp css variables page. */
+router.get('/projects/jscamp/cssVariables', function(req, res, next) {
+  res.render('projects/jscamp/cssVariables');
+});
+
 /* GET services graphic design page. */
 router.get('/services/graphicDesign', function(req, res, next) {
   res.render('services/graphicDesign');
