@@ -68,6 +68,11 @@ router.get('/services/graphicDesign', function(req, res, next) {
   res.render('services/graphicDesign');
 });
 
+/* GET services graphic design faq page. */
+router.get('/services/faq', function(req, res, next) {
+  res.render('services/faq');
+});
+
 /* GET services game dev page. */
 router.get('/services/gameDev', function(req, res, next) {
   res.render('services/gameDev');
