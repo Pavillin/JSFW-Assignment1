@@ -1,0 +1,46 @@
+extends ../layout
+
+block content
+  // Popup Window
+  .alert
+    span.closebtn(onclick="this.parentElement.style.display='none';") ×
+    | 🚨 My graphic design services have been disabled for the time being to focus on school. 🚨
+  // Popup Window END
+
+  // Reviews START
+  include ../partials/testimonials
+  // Reviews END
+
+  // Contact Form START
+  .container
+    .col-md-5(style='margin: auto;')
+      .form-area
+        form#cntform(role='form', method='POST', action='process/graphic_design_form.php', onsubmit="alert('Form submitted.');")
+          br(style='clear:both')
+          h3(style='margin-bottom: 25px; text-align: center;') Design Form!
+          p(style='margin-bottom: 25px; text-align: center;')
+            | If you would like to request graphic design work from me,
+            | please fill out the form below and I'll contact you on Discord!
+          p(style='margin-bottom: 25px; text-align: center;')
+            | If you have any questions please check my 
+            a(href='faq.php', style='color: #ff9800') frequently asked questions
+            |  page!
+          .form-group
+            input#name.form-control(type='text', name='name', placeholder='Name', required='')
+          .form-group
+            input#discord.form-control(type='text', name='discord', placeholder='Discord (Drix#8197)', required='')
+          .form-group
+            select#paymentType.form-control(name='paymentType', required='')
+              option(value='', hidden='') Select Payment Type
+              option(value='PayPal') PayPal
+              option(value='Rocket League Items') Rocket League Items
+          .form-group
+            input#gEmail.form-control(type='text', name='gEmail', placeholder='Email')
+          .form-group
+            input#designType.form-control(type='text', name='designType', placeholder='Design Type(Logo, Banner, etc)', required='')
+          .form-group
+            textarea#details.form-control(type='textarea', name='details', placeholder='Details about what you want', maxlength='750', rows='7', form='cntform', required='')
+          .form-group
+            textarea#extra.form-control(type='textarea', name='extra', placeholder='Extra requirements (Optional)', maxlength='200', rows='7', form='cntform')
+          button#submit.btn.btn-primary.btn-submit(type='submit', name='submit', disabled='') Submit Form
+  // Contact Form END
