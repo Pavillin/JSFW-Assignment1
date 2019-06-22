@@ -1,3 +1,9 @@
+/**
+ * File: main.js
+ * Author: Dylan Sprague
+ * Website: nodeportfolio.deadfyre.com
+ * Description: The main js file for the website
+ */
 
 $(document).ready(function(){
   //Contact Form START

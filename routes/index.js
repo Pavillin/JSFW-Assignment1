@@ -1,3 +1,10 @@
+/**
+ * File: index.js
+ * Author: Dylan Sprague
+ * Website: nodeportfolio.deadfyre.com
+ * Description: The main routing file for the application
+ */
+
 var express = require('express');
 var router = express.Router();
 

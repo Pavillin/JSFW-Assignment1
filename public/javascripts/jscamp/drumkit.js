@@ -1,3 +1,9 @@
+/**
+ * File: drumkit.js
+ * Author: Dylan Sprague
+ * Website: nodeportfolio.deadfyre.com
+ * Description: js file for the drumkit application
+ */
 
 //create function to play a sound when correct key is pressed
 function playSound(e) {
